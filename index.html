@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foreign Exchange</title>
+    
+    <link rel="icon" href="icons/icon_currency_exchange.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   
+
+    <div class="container mt-4">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="converter mb-4">
+            <div class="header">Converter</div>
+
+            <table class="table table-borderless data-table w-100">
+              <tr>
+                <td><label for="fromCurrency">From</label></td>
+                <td colspan="3">
+                  <select id="fromCurrency" class="form-select">
+                   
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="toCurrency">To</label></td>
+                <td colspan="3">
+                  <select id="toCurrency" class="form-select">
+                   
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="convertDate">Date</label></td>
+                <td colspan="3">
+                  <input type="date" id="convertDate" class="form-control" />
+                </td>
+              </tr>
+              <tr>
+                <td class="buttonTd">
+                  <button id="converterBtn" class="btn btn-primary btnConvert">
+                    Convert
+                  </button>
+                </td>
+                <td colspan="3" class="resultTd">
+                    <p id="convertResult"></p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="latest">
+            <div class="header">Latest&nbsp;<span id="todaysDate"></span></div>
+            <table class="table table-borderless data-table w-100" id="latestTable">
+
+            </table>
+          </div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="month_rates">
+            <div class="header">Month Rates</div>
+            <table class="table table-borderless data-table w-100">
+              <tr>
+                <td><label for="baseCurrency">Base</label></td>
+                <td colspan="9">
+                  <select id="baseCurrency" class="form-select">
+                   
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="currencySelect">Currency</label></td>
+                <td colspan="9">
+                  <select id="currencySelect" class="form-select">
+                   
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="monthSelect">Month</label></td>
+                <td colspan="9">
+                  <input type="month" id="monthSelect" class="form-control" />
+                </td>
+              </tr>
+              <tr>
+                <td class="buttonTd">
+                  <button id="createDiagramBtn" class="btn btn-primary btnConvert">
+                    Ok
+                  </button>
+                </td>
+                <td colspan="9" class="diagramTd">
+                    <canvas id="myChart"></canvas>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/gh/alfrcr/paginathing/dist/paginathing.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
