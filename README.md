@@ -21,7 +21,7 @@ This project allows you to:
 
 ## Installation and Usage
 
-1. Clone the repository:
+- Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/foreign-exchange-converter.git
+git clone https://github.com/TarasValnychok/ForeignExchangeApp.git
